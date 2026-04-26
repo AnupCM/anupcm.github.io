@@ -1,50 +1,47 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top, #0f172a, #020617);
+  background: #020617;
   color: #e2e8f0;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
 }
 
 /* HERO */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 20px;
-  gap: 40px;
-}
-
-.hero-content {
-  flex: 1;
-}
-
-.hero-image img {
-  width: 220px;
-  opacity: 0.9;
+  text-align: center;
+  padding: 100px 20px 60px;
 }
 
 .hero h1 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.tagline {
-  margin-top: 10px;
-  color: #38bdf8;
-}
-
-.tagline span {
-  font-size: 0.9rem;
+.subtitle {
+  font-size: 1.1rem;
   color: #94a3b8;
 }
 
+.tagline {
+  font-size: 1.2rem;
+  color: #38bdf8;
+  margin: 10px 0 20px;
+}
+
+/* BUTTONS FIX */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
 .buttons a {
-  margin-right: 10px;
   padding: 10px 20px;
   background: #1e293b;
   border-radius: 8px;
@@ -59,13 +56,12 @@ body {
 }
 
 /* SECTIONS */
-section {
-  margin: 70px 0;
+.section {
+  margin: 60px 0;
 }
 
-h2 {
+.center {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 /* GRID */
@@ -80,32 +76,20 @@ h2 {
   background: #1e293b;
   padding: 20px;
   border-radius: 12px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .small {
   text-align: center;
 }
 
-/* TEXT */
-.center {
-  text-align: center;
-  max-width: 700px;
-  margin: auto;
-}
-
 /* SKILLS */
 .skills {
-  text-align: center;
+  margin-top: 10px;
 }
 
 .skills span {
   display: inline-block;
-  margin: 8px;
+  margin: 6px;
   padding: 8px 14px;
   background: #334155;
   border-radius: 20px;
@@ -116,16 +100,4 @@ footer {
   text-align: center;
   margin-top: 50px;
   opacity: 0.6;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-image img {
-    width: 150px;
-  }
 }
