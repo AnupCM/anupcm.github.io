@@ -16,16 +16,12 @@ export default function App() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          I build scalable systems that process millions of records ⚡
+          Backend Engineer @ JP Morgan | Scaling systems handling millions of records ⚡
         </motion.p>
 
         <div className="buttons">
-          <a href="https://github.com/AnupCM" target="_blank">
-			GitHub
-			</a>
-          <a href="https://www.linkedin.com/in/anupcm/" target="_blank">
-			LinkedIn
-			</a>
+          <a href="https://github.com/AnupCM" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/anupcm/" target="_blank">LinkedIn</a>
         </div>
       </section>
 
@@ -33,9 +29,21 @@ export default function App() {
       <section>
         <h2>About Me</h2>
         <p>
-          Software Engineer at JP Morgan building cloud-native data platforms
-          using AWS, Kafka, and distributed systems.
+          Software Engineer specializing in scalable backend systems, cloud-native
+          architecture, and high-volume data platforms. I design systems that run
+          24/7 and process millions of records efficiently.
         </p>
+      </section>
+
+      {/* WHAT I DO */}
+      <section>
+        <h2>What I Do Best</h2>
+        <ul className="list">
+          <li>Design scalable backend systems</li>
+          <li>Build event-driven architectures</li>
+          <li>Optimize AWS infrastructure & cost</li>
+          <li>Handle high-volume data pipelines</li>
+        </ul>
       </section>
 
       {/* EXPERIENCE */}
@@ -45,7 +53,7 @@ export default function App() {
         {[
           {
             title: "JP Morgan Chase",
-            desc: "Processing millions of records daily using AWS & Kafka",
+            desc: "Built large-scale issuer data platform processing millions of records daily using AWS & Kafka",
           },
           {
             title: "Deloitte",
@@ -67,6 +75,33 @@ export default function App() {
         ))}
       </section>
 
+      {/* PROJECTS */}
+      <section>
+        <h2>Projects</h2>
+
+        <div className="card">
+          <h3>Issuer Data Platform</h3>
+          <p>
+            Designed and built a system processing millions of records daily using
+            AWS, Kafka, and event-driven architecture.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>AWS Cost Optimization</h3>
+          <p>
+            Reduced cloud costs by 30% by identifying inefficiencies and automating optimization workflows.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>Event-Driven Monitoring System</h3>
+          <p>
+            Built real-time alerting system using CloudWatch, SNS, and Lambda improving incident response.
+          </p>
+        </div>
+      </section>
+
       {/* SKILLS */}
       <section>
         <h2>Tech Stack</h2>
@@ -79,14 +114,6 @@ export default function App() {
             )
           )}
         </div>
-      </section>
-
-      {/* FUN */}
-      <section>
-        <h2>Fun Side</h2>
-        <p>
-          I design systems that run 24/7 so I can sleep peacefully 😄
-        </p>
       </section>
 
       {/* FOOTER */}
